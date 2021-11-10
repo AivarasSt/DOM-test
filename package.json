@@ -1,0 +1,23 @@
+{
+  "name": "dom-test",
+  "version": "1.0.0",
+  "description": "CRUD test",
+  "main": "index.js",
+  "scripts": {
+    "start-windows": "node_modules\\.bin\\json-server --watch data/db.json",
+    "start-unix": "node_modules/.bin/json-server --watch data/db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AivarasSt/DOM-test.git"
+  },
+  "author": "Aivaras Stanaitis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AivarasSt/DOM-test/issues"
+  },
+  "homepage": "https://github.com/AivarasSt/DOM-test#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
