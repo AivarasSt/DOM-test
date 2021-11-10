@@ -1,6 +1,5 @@
 class ApartmentGridComponent {
   constructor() {
-    this.htmlElement = document.createElement('div');
     this.state = {
       apartments: [],
       loading: false
@@ -22,13 +21,7 @@ class ApartmentGridComponent {
 
   showError = error => console.error(error);
 
-  deleteApartment = (id) => {
-    API.deleteApartment(
-      this.fetchApartments,
-      this.showError,
-      id
-    );
-  }
+  deleteApartment = id => API.deleteApartment(this.fetchApartments, this.showError, id);
 
   wrapChild = element => {
     const wrapper = document.createElement('div');

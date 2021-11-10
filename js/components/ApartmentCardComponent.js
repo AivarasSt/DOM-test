@@ -9,7 +9,7 @@ class ApartmentCardComponent {
   }
   
   init = () => {
-    const { id, type, owner, roomCount, square, address, price, imgSrc } = this.props;
+    const { type, owner, roomCount, square, address, price, imgSrc, onDelete } = this.props;
     const { fullname, email, phone } = owner;
     const { city, country, street, number} = address;
     const { amount, currency } = price;
@@ -40,7 +40,7 @@ class ApartmentCardComponent {
     `;
 
     const delBtn = this.htmlElement.querySelector('.btn');
-    delBtn.addEventListener('click', () => this.props.onDelete(id));
+    delBtn.addEventListener('click', onDelete);
 
 
     const apartmentType = this.htmlElement.querySelector(".type")
