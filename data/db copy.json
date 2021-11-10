@@ -13,7 +13,7 @@
       "address": {
         "city": "Vilnius",
         "country": "Lietuva",
-        "street": "Laisvės g.",
+        "street": "Laisvės pr.",
         "number": "148-45"
       },
       "price": {
@@ -131,6 +131,50 @@
         "currency": "$"
       },
       "imgSrc": "https://aruodas-img.dgn.lt/object_62_100382467/panevezys-klaipedos-parko-g-1-kambario.jpg"
+    },
+    {
+      "id": "107",
+      "type": "house",
+      "owner": {
+        "fullname": "Perekūpas Agentauskas",
+        "email": "nuvogsiujusupinigus@gmail.com",
+        "phone": "+37067777777"
+      },
+      "roomCount": 5,
+      "square": 201,
+      "address": {
+        "city": "Klaipėda",
+        "country": "Lietuva",
+        "street": "Karklininkų g.",
+        "number": "5"
+      },
+      "price": {
+        "amount": 328820,
+        "currency": "€"
+      },
+      "imgSrc": "https://aruodas-img.dgn.lt/object_62_99959135/klaipedos-r-sav-karkles-k-karklininku-g.jpg"
+    },
+    {
+      "id": "108",
+      "type": "cottage",
+      "owner": {
+        "fullname": "Rangovas Išgeraitis",
+        "email": "pilu247@gmail.com",
+        "phone": "+37068888888"
+      },
+      "roomCount": 4,
+      "square": 87,
+      "address": {
+        "city": "Kaunas",
+        "country": "Lietuva",
+        "street": "Vynuogyno g.",
+        "number": "18"
+      },
+      "price": {
+        "amount": 135000,
+        "currency": "$"
+      },
+      "imgSrc": "https://aruodas-img.dgn.lt/object_62_100262451/kauno-r-sav-akademijos-mstl-vynuogyno-g.jpg"
     }
   ]
 }
