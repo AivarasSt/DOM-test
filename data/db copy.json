@@ -1,0 +1,136 @@
+{
+  "apartment": [
+    {
+      "id": "101",
+      "type": "flat",
+      "owner": {
+        "fullname": "Linijonas Šakutavičius",
+        "email": "linijonas@gmail.com",
+        "phone": "+37061111111"
+      },
+      "roomCount": 5,
+      "square": 140,
+      "address": {
+        "city": "Vilnius",
+        "country": "Lietuva",
+        "street": "Laisvės g.",
+        "number": "148-45"
+      },
+      "price": {
+        "amount": 545000,
+        "currency": "€"
+      },
+      "imgSrc": "https://aruodas-img.dgn.lt/object_62_99213045/vilnius-naujamiestis-aguonu-g-5-kambariu.jpg"
+    },
+    {
+      "id": "102",
+      "type": "house",
+      "owner": {
+        "fullname": "Klavatas Kompvidas",
+        "email": "klavkomp@gmail.com",
+        "phone": "+37062222222"
+      },
+      "roomCount": 6,
+      "square": 191,
+      "address": {
+        "city": "Vilnius",
+        "country": "Lietuva",
+        "street": "Biochemikų g.",
+        "number": "12"
+      },
+      "price": {
+        "amount": 305600,
+        "currency": "€"
+      },
+      "imgSrc": "https://aruodas-img.dgn.lt/object_62_97407011/vilnius-visoriai-biochemiku-g-blokinis.jpg"
+    },
+    {
+      "id": "103",
+      "type": "cottage",
+      "owner": {
+        "fullname": "Kidas Batareikis",
+        "email": "kid.battery@gmail.com",
+        "phone": "+37063333333"
+      },
+      "roomCount": 4,
+      "square": 102,
+      "address": {
+        "city": "Kaunas",
+        "country": "Lietuva",
+        "street": "Kaimelės g.",
+        "number": "12"
+      },
+      "price": {
+        "amount": 230000,
+        "currency": "$"
+      },
+      "imgSrc": "https://aruodas-img.dgn.lt/object_62_98435841/kaunas-romainiai-kaimeles-g-murinis.jpg"
+    },
+    {
+      "id": "104",
+      "type": "house",
+      "owner": {
+        "fullname": "Kavalija Žirklė",
+        "email": "kavalija@zirkle.com",
+        "phone": "+37064444444"
+      },
+      "roomCount": 6,
+      "square": 347,
+      "address": {
+        "city": "Klaipėda",
+        "country": "Lietuva",
+        "street": "Dailidžių g.",
+        "number": "1"
+      },
+      "price": {
+        "amount": 250000,
+        "currency": "$"
+      },
+      "imgSrc": "https://aruodas-img.dgn.lt/object_62_98518925/klaipeda-trekas-dailidziu-g-murinis-namas.jpg"
+    },
+    {
+      "id": "105",
+      "type": "flat",
+      "owner": {
+        "fullname": "Tankas Bonkius",
+        "email": "iamtank@yandex.ru",
+        "phone": "+37065555555"
+      },
+      "roomCount": 3,
+      "square": 63,
+      "address": {
+        "city": "Šiauliai",
+        "country": "Lietuva",
+        "street": "Lyros g.",
+        "number": "158b-18"
+      },
+      "price": {
+        "amount": 69000,
+        "currency": "€"
+      },
+      "imgSrc": "https://aruodas-img.dgn.lt/object_62_98755531/siauliai-dainiai-lyros-g-3-kambariu-butas.jpg"
+    },
+    {
+      "id": "106",
+      "type": "flat",
+      "owner": {
+        "fullname": "Manitoras Rubinovičius",
+        "email": "rubinovic@vk.ru",
+        "phone": "+37066666666"
+      },
+      "roomCount": 1,
+      "square": 36,
+      "address": {
+        "city": "Panevėžys",
+        "country": "Lietuva",
+        "street": "Parko g.",
+        "number": "18-3"
+      },
+      "price": {
+        "amount": 31500,
+        "currency": "$"
+      },
+      "imgSrc": "https://aruodas-img.dgn.lt/object_62_100382467/panevezys-klaipedos-parko-g-1-kambario.jpg"
+    }
+  ]
+}
