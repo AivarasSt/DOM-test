@@ -22,6 +22,14 @@ class ApartmentGridComponent {
 
   showError = error => console.error(error);
 
+  deleteApartment = (id) => {
+    API.deleteApartment(
+      this.fetchApartments,
+      this.showError,
+      id
+    );
+  }
+
   wrapChild = element => {
     const wrapper = document.createElement('div');
     wrapper.className = 'col-12 col-sm-6 col-lg-4 col-xl-3 align-self-stretch';
@@ -43,11 +51,14 @@ class ApartmentGridComponent {
       this.htmlElement.innerHTML = '<div class="text-center"><img src="assets/loading.gif" /></div>';
     } else if (apartments.length > 0){
       this.htmlElement.innerHTML = '';
-      const children = apartments
-        .map(x => new ApartmentCardComponent(x))
-        .map(x => x.htmlElement)
-        .map(this.wrapChild);
-      this.htmlElement.append(...children);
+      const wrappedElements = apartments
+      .map(({ id, ...apartmentProps }) => new ApartmentCardComponent({
+        ...apartmentProps,
+        onDelete: () => this.deleteApartment(id)
+      }))
+      .map(component => component.htmlElement)
+      .map(this.wrapChild);
+    this.htmlElement.append(...wrappedElements);
     } else {
       this.htmlElement.innerHTML = 'Deja, šiuo metu duomenų nėra';
     };
