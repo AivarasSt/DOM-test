@@ -1,13 +1,64 @@
 class ApartmentCardComponent {
+  
+  static USD_EUR = 0.86387687
+
   constructor(props) {
     this.props = props;
     this.htmlElement = document.createElement('article');
-
     this.init();
   }
-
+  
   init = () => {
-    this.htmlElement.className = "card p-3 shadow-sm col-lg-4";
-    this.htmlElement.innerHTML = "Kortelės turinys"
+    const { id, type, owner, roomCount, square, address, price, imgSrc } = this.props;
+    const { fullname, email, phone } = owner;
+    const { city, country, street, number} = address;
+    const { amount, currency } = price;
+    const fullAddress = `${street} ${number}, ${city}, ${country}`
+
+    this.htmlElement.className = "card p-3 shadow-sm";
+    this.htmlElement.innerHTML = `  
+    <img src="${imgSrc}" style="height:180px">
+    <p class="type text-muted my-2"></p>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex flex-column">
+        <p class="fw-bold m-0">${fullAddress}</p>
+        <p class="text-muted">${roomCount} k. | ${square} m²</p>
+      </div>
+    </div>
+    <ul class = "list-unstyled">
+      <strong>Kontaktai:</strong>
+      <li>${fullname}</li>
+      <li>${email}</li>
+      <li>${phone}</li>
+    </ul>
+    <div class="d-flex justify-content-between">
+      <h2 class="price m-0 pt-1"><h2> 
+    </div>
+    `;
+
+
+    const apartmentType = this.htmlElement.querySelector(".type")
+    switch (type) {
+      case 'flat':
+        apartmentType.innerHTML = "Butas pardavimui"
+        break
+      case 'house':
+        apartmentType.innerHTML = "Namas pardavimui"
+        break
+      case 'cottage':
+        apartmentType.innerHTML = "Kotedžas pardavimui"
+        break
+      default: 
+        break
+    }
+
+    const finalPrice = this.htmlElement.querySelector(".price")
+    if(currency === "$"){
+      finalPrice.innerHTML = `${Math.floor(amount * ApartmentCardComponent.USD_EUR)} €` 
+    } else if (currency === "€"){
+      finalPrice.innerHTML = `${amount} ${currency}`
+    } else {
+      finalPrice.innerHTML = `Kaina pateikta netinkama valiuta`
+    }
   }
-} 
+}
